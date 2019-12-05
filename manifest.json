@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+    "name": "Amazon Detective Pikachu",
+    "description": "Replace Amazon Detective with Amazon Detective Pikachu!",
+    "version": "1.0",
+    "icons": {
+        "48": "icons/detective_pikachu_48.png",
+        "96": "icons/detective_pikachu_96.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
